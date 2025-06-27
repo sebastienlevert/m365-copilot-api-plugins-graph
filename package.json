@@ -1,5 +1,5 @@
 {
-  "name": "graph-api-plugins",
+  "name": "api-plugins-graph",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/src/index.js",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
-    "@microsoft/typespec-m365-copilot": "file:./microsoft-typespec-m365-copilot-1.0.0-rc.3.tgz",
+    "@microsoft/typespec-m365-copilot": "file:./packages/microsoft-typespec-m365-copilot-1.0.0-rc.3.tgz",
     "@types/node": "^22.9.0",
     "@typespec/http": "^1.1.0",
     "@typespec/library-linter": "^0.71.0",
