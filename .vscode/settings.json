@@ -1,0 +1,6 @@
+{
+  "prettier.configPath": ".prettierrc",
+  "cSpell.words": ["typespec"],
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
+}

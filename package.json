@@ -1,0 +1,49 @@
+{
+  "name": "graph-api-plugins",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "tspMain": "lib/main.tsp",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
+    "./testing": {
+      "types": "./dist/src/testing/index.d.ts",
+      "default": "./dist/src/testing/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@typespec/http": "^1.1.0",
+    "@typespec/openapi": "^1.1.0",
+    "@typespec/openapi3": "^1.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@microsoft/typespec-m365-copilot": "file:./microsoft-typespec-m365-copilot-1.0.0-rc.3.tgz",
+    "@types/node": "^22.9.0",
+    "@typespec/http": "^1.1.0",
+    "@typespec/library-linter": "^0.71.0",
+    "@typespec/openapi": "^1.1.0",
+    "@typespec/openapi3": "^1.1.0",
+    "@typespec/prettier-plugin-typespec": "^1.1.0",
+    "@typespec/rest": "^0.71.0",
+    "eslint": "^9.29.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.34.1"
+  },
+  "scripts": {
+    "build": "tsc && npm run build:tsp",
+    "pack": "npm run lint && npm run format:check && npm run build && npm pack",
+    "watch": "tsc --watch",
+    "build:tsp": "tsp compile . --warn-as-error --import @typespec/library-linter --no-emit",
+    "test": "node --test",
+    "lint": "eslint --report-unused-disable-directives --max-warnings=0",
+    "lint:fix": "eslint . --report-unused-disable-directives --fix",
+    "format": "prettier .  --write",
+    "format:check": "prettier --check ."
+  },
+  "private": false
+}
