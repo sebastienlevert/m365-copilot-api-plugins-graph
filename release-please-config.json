@@ -1,8 +1,12 @@
 {
   "release-type": "node",
+  "prerelease-type": "beta",
+  "bump-minor-pre-major": true,
+  "prerelease": true,
+  "release-as": "0.1.0",
   "packages": {
     ".": {
-      "package-name": "api-plugins-graph",
+      "package-name": "m365-copilot-api-plugins-graph",
       "changelog-sections": [
         {
           "type": "feat",
