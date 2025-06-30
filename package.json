@@ -1,5 +1,5 @@
 {
-  "name": "api-plugins-graph",
+  "name": "m365-copilot-api-plugins-graph",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/src/index.js",
