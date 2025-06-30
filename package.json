@@ -1,6 +1,6 @@
 {
   "name": "m365-copilot-api-plugins-graph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/src/index.js",
   "tspMain": "lib/main.tsp",
