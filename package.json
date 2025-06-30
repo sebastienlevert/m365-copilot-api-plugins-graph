@@ -43,7 +43,9 @@
     "lint": "eslint --report-unused-disable-directives --max-warnings=0",
     "lint:fix": "eslint . --report-unused-disable-directives --fix",
     "format": "prettier .  --write",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "version:set": "node scripts/setVersion.js",
+    "version:set-tag": "node scripts/setVersion.js"
   },
   "private": false
 }
