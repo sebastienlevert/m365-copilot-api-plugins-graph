@@ -138,15 +138,48 @@ lib/
 2. Create a feature branch
 3. Make your changes
 4. Run tests and linting
-5. Submit a pull request
+5. Ensure your commit messages follow [Conventional Commits](https://www.conventionalcommits.org/)
+6. Submit a pull request
 
-## License
+### Commit Message Format
 
-This project is licensed under the terms specified in the LICENSE file.
+This project uses [Conventional Commits](https://www.conventionalcommits.org/) to ensure consistent and meaningful commit messages. All commits must follow this format:
 
-## Related Links
+```
+<type>[optional scope]: <description>
 
-- [Microsoft Graph API Documentation](https://learn.microsoft.com/en-us/graph/)
-- [TypeSpec Documentation](https://typespec.io/)
-- [Microsoft 365 Copilot Plugin Development](https://learn.microsoft.com/en-us/microsoft-365-copilot/)
-- [Microsoft Graph API Terms of Use](https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use)
+[optional body]
+
+[optional footer(s)]
+```
+
+#### Supported Types
+
+- feat: A new feature
+- fix: A bug fix
+- docs: Documentation only changes
+- style: Changes that do not affect the meaning of the code
+- refactor: A code change that neither fixes a bug nor adds a feature
+- perf: A code change that improves performance
+- test: Adding missing tests or correcting existing tests
+- build: Changes that affect the build system or external dependencies
+- ci: Changes to CI configuration files and scripts
+- chore: Other changes that don't modify src or test files
+- revert: Reverts a previous commit
+
+#### Examples
+
+```bash
+feat: add email attachment support
+fix(auth): resolve token refresh issue
+docs: update API usage examples
+test: add unit tests for task operations
+```
+
+#### Enforcement
+
+- **Pre-commit hooks**: Commit messages are validated locally using commitlint
+- **CI/CD**: Pull requests are automatically validated for conventional commit format
+- **Release automation**: Semantic versioning and changelog generation depend on conventional commits
+
+````

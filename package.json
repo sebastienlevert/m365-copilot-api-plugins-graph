@@ -20,6 +20,8 @@
     "@typespec/openapi3": "^1.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "@eslint/js": "^9.29.0",
     "@microsoft/typespec-m365-copilot": "file:./packages/microsoft-typespec-m365-copilot-1.0.0-rc.3.tgz",
     "@types/node": "^22.9.0",
@@ -30,6 +32,7 @@
     "@typespec/prettier-plugin-typespec": "^1.1.0",
     "@typespec/rest": "^0.71.0",
     "eslint": "^9.29.0",
+    "husky": "^9.0.0",
     "prettier": "^3.3.3",
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.34.1"
@@ -44,6 +47,7 @@
     "lint:fix": "eslint . --report-unused-disable-directives --fix",
     "format": "prettier .  --write",
     "format:check": "prettier --check .",
+    "prepare": "husky",
     "version:set": "node scripts/setVersion.js",
     "version:set-tag": "node scripts/setVersion.js"
   },
