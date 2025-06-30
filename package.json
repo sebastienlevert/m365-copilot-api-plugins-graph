@@ -47,9 +47,7 @@
     "lint:fix": "eslint . --report-unused-disable-directives --fix",
     "format": "prettier .  --write",
     "format:check": "prettier --check .",
-    "prepare": "husky",
-    "version:set": "node scripts/setVersion.js",
-    "version:set-tag": "node scripts/setVersion.js"
+    "prepare": "husky"
   },
   "private": false
 }
