@@ -1,3 +1,7 @@
 {
-  ".": "0.1.0"
+  ".": "0.1.0",
+  "release-type": "node",
+  "prerelease-type": "beta",
+  "bump-minor-pre-major": true,
+  "prerelease": true
 }
