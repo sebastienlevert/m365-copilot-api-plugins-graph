@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/sebastienlevert/m365-copilot-api-plugins-graph/compare/v0.1.0...v0.2.0) (2025-07-01)
+
+
+### Features
+
+* add events service ([dc13faf](https://github.com/sebastienlevert/m365-copilot-api-plugins-graph/commit/dc13faffec1ff7d3556dfb3d3aed71cd4a02967e))
+* add events service ([831858d](https://github.com/sebastienlevert/m365-copilot-api-plugins-graph/commit/831858dac07a792984cae2030673e5212f734680))
+
 ## 0.1.0 (2025-06-30)
 
 
