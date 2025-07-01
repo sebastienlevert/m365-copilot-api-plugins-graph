@@ -17,14 +17,14 @@ namespace Microsoft.Graph.Mail {
   const ACTIONS_METADATA = #{
     nameForHuman: "Mail actions for Microsoft Graph API",
     descriptionForHuman: "Manage your emails using the Microsoft Graph API",
-    descriptionForModel: "Adds the ability to  the Microsoft Graph API",
+    descriptionForModel: "Adds the ability to manage user emails using the Microsoft Graph API",
     legalInfoUrl: "https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use",
     privacyPolicyUrl: "https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use",
   };
 
   /**
    * Sends a message to a user.
-   * @param body The request body containing the message to be sent.
+   * @param body The body containing the message to be sent.
    * @returns A void response indicating the message was sent successfully.
    */
   @route("/me/sendMail")
