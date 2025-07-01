@@ -1,5 +1,6 @@
 import "./mail.tsp";
 import "./tasks.tsp";
+import "./events.tsp";
 
 namespace Microsoft.Graph {
   /**
